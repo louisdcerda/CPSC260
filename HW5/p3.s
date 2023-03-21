@@ -1,8 +1,8 @@
 .global _start
         .text
 _start:
-        movw    $65535, %ax
-        movb    $0x01, %al
+        movw    $37, %ax
+        movb    $65, %ax
         # exit program
         movq    $60, %rax
         xor     %rdi, %rdi
