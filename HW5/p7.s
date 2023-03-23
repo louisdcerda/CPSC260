@@ -1,10 +1,13 @@
         .global _start
         .text
 _start:
-        movw    $34, %r8
-        movw    $27, %r9
-        movw    %19, %r10
-        
+    movd    $34, %r8d
+    movq    $27, %r9
+    movq    $19, %r10
+    movq    %r9, %r11
+    movw    %r8, %eax
+    subq    %r10, %eax
+
 
 
 
